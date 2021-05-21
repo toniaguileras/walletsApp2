@@ -1,7 +1,6 @@
 
 
-export async function postData(url = 'http://localhost:8080/api/user', data = {}) {
-    // Default options are marked with *
+export async function getUsers(url = 'http://localhost:8080/api/user', data = {}) {
     return await fetch(url, {
       method: 'GET',
       mode: 'cors', 

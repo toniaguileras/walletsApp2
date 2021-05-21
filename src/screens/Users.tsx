@@ -3,6 +3,10 @@ import { Link } from 'react-router-dom';
 import CardProfile from './CardProfile';
 
 class Users extends React.Component{
+
+    getUsers = () =>{
+        
+    }
    render(){
         return (
             <div>
