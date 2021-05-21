@@ -8,7 +8,7 @@ class Users extends React.Component{
             <h3 className="d-flex justify-content-center mt-4">Users Page</h3>      
             
             <Card style={{maxWidth: 345}} variant="outlined">
-                <CardActionArea>
+                <CardActionArea className ="d-flex justify-content-center">
                     <CardMedia style={{maxHeight:90, maxWidth:90}}
                     component="img"
                     alt="User Image"
