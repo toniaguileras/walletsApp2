@@ -1,5 +1,8 @@
 import { TransferDTO } from "../interfaces/TransferDTO";
 
+export function  getWallets(){
+  return fetch('http://localhost:8080/api/wallet').then(res => res.json());
+}
 export function getWalletsByUserId(userIdParam: number) {
   return fetch(
     "http://localhost:8080/api/wallet/user?userId=" + userIdParam

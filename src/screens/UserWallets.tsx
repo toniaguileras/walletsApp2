@@ -33,6 +33,7 @@ class UserWallets extends React.Component {
       this.setState({ wallets: walletsJson })
     );
   }
+  
 
   render() {
           return (
