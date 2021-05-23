@@ -1,12 +1,22 @@
 import React from 'react'
-import { Card, CardActionArea, CardContent, CardMedia, Typography } from '@material-ui/core';
+import { Button, Card, CardActionArea, CardActions, CardContent, CardMedia, Typography } from '@material-ui/core';
 
-function CardProfile(props:{name:string, surname:string, email:string, username:string}) {
+function CardProfile(props:{ id: number, name:string, surname:string, email:string, username:string}) {
     
+    const style = {
+        card:{
+            maxWidth:345
+        },
+        cardMedia:{
+            maxHeight:90,
+            maxWidth:90
+        }
+    }
+
     return (
-        <Card style={{maxWidth: 345}} variant="outlined">
+        <Card style={style.card} variant="outlined">
                 <CardActionArea className ="d-flex justify-content-center">
-                    <CardMedia style={{maxHeight:90, maxWidth:90}}
+                    <CardMedia style={style.cardMedia}
                     component="img"
                     alt="User Image"
                     width="60"
@@ -21,7 +31,14 @@ function CardProfile(props:{name:string, surname:string, email:string, username:
                         Email: {props.email}<br/> Username: {props.username}
                     </Typography> 
                 </CardContent>
+                <CardActions>
+                    <Button href={"/wallets/user/" + props.id}  size="small" color="primary">
+                      Wallets
+                    </Button>         
+                </CardActions>
             </Card>
     )
 }
 export default CardProfile;
+
+

@@ -12,7 +12,6 @@ class Home extends React.Component {
                 <div className="d-flex justify-content-left">
                     <ul>
                     <li><Link to="/users" className="link-dark">Users</Link></li>
-                    <li><Link to="/wallets" className="link-dark">Wallets</Link></li>
                     </ul>
                 </div>
                 <div className = "d-flex justify-content-center">
