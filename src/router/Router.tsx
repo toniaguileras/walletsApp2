@@ -10,7 +10,7 @@ function Router () {
             <Switch>
             <Route exact path="/"><Home/></Route> 
                 <Route exact path="/users"><Users/></Route>
-                <Route path="/wallets/user/:id"><UserWallets/></Route>
+                <Route path="/wallets/user/:id" component={UserWallets}/>
             </Switch>
         </BrowserRouter>
         )

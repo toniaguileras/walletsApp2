@@ -15,7 +15,7 @@ class Home extends React.Component {
                     </ul>
                 </div>
                 <div className = "d-flex justify-content-center">
-                    <p>This is an example application for Afterpay enterprise. My name is Tony Aguilera Sánchez, 23 year old developer in Java and React.</p>
+                    <p>This is an example application for Afterpay enterprise. My name is Tony Aguilera Sánchez, 23 year old developer in Java and React Native.</p>
                 </div>
             </>
         )
